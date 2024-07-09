@@ -19,6 +19,7 @@ void main(){
         scanf("%d",&p[i].pid);
         printf("\nEnter the arrivat time and burst time");
         scanf("%d %d",&p[i].at,&p[i].bt);
+        p[i].visited=0;
     }
     printf("id\tat\tbt\n");
     for(i=0;i<n;i++){
@@ -35,13 +36,15 @@ void main(){
     }
     time=0;
     while(count<n){
-        min=0;
+        min=-1;
         for(j=0;j<n;j++){
             if (p[j].at<=time && p[j].visited==0 && p[j].bt<p[min].bt){
-                min=j;
+                if(min==-1 || p[j].bt<p[min].bt){
+                    min=j;
+                }
             }
         }
-        if(min==0 && p[0].visited==1){
+        if(min==-1 ){
             time++;
         }
         else{

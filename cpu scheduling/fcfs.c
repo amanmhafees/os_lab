@@ -7,6 +7,7 @@ struct Process{
     int tat;
     int wt;
 }p[10],temp;
+//Fcfs
 void main(){
     int n,i,j,min,time,total_tat,total_wt;
     printf("Enter the number of processes: ");
