@@ -17,7 +17,7 @@ void main(){
         printf("\nEnter the arrivat time and burst time");
         scanf("%d %d",&p[i].at,&p[i].bt);
     }
-    printf("id\tat\tbt");
+    printf("id\tat\tbt\n");
     for(i=0;i<n;i++){
         printf("%d\t%d\t%d\n",p[i].pid,p[i].at,p[i].bt);
     }
@@ -41,7 +41,7 @@ void main(){
             total_wt=p[i].wt;
         }
     }
-    printf("| id\t| at\t| bt\t| ct\t| tat\t| wt");
+    printf("| id\t| at\t| bt\t| ct\t| tat\t| wt\n");
     printf("_______________________________________\n");
     for(i=0;i<n;i++){
         printf("%d\t| %d\t| %d\t| %d\t| %d\t| %d\n",p[i].pid,p[i].at,p[i].bt,p[i].ct,p[i].tat,p[i].wt);
