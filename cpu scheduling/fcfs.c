@@ -37,8 +37,11 @@ void main(){
             p[i].tat=p[i].ct-p[i].at;
             p[i].wt=p[i].tat-p[i].bt;
             time=p[i].ct;
-            total_tat=p[i].tat;
-            total_wt=p[i].wt;
+            total_tat=total_tat+p[i].tat;
+            total_wt=total_wt+p[i].wt;
+        }
+        else{
+            time++;
         }
     }
     printf("| id\t| at\t| bt\t| ct\t| tat\t| wt\n");
@@ -47,4 +50,5 @@ void main(){
         printf("%d\t| %d\t| %d\t| %d\t| %d\t| %d\n",p[i].pid,p[i].at,p[i].bt,p[i].ct,p[i].tat,p[i].wt);
         printf("________________________________________\n");
     }
+    printf("average tat: %d\n average wt: %d\n",total_tat/n,total_wt/n);
 }
