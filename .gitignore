@@ -1,4 +1,10 @@
 a.exe
 fcfs.exe
 fcfs.o
+sjf.exe
+sjf.o
+priority.exe
+priority.o
+roundrobin.exe
+roundrobin.o
 .vscode
