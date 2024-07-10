@@ -5,6 +5,6 @@ sjf.exe
 sjf.o
 priority.exe
 priority.o
-roundrobin.exe
-roundrobin.o
+
 .vscode
+.gitignore
