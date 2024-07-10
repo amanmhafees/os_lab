@@ -1,3 +1,6 @@
 fifo.exe
 fifo.o
+lru.exe
+lru.o
+
 .gitignore
