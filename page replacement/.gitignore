@@ -1,5 +1,3 @@
-fifo.o
 fifo.exe
-
+fifo.o
 .gitignore
-
