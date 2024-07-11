@@ -38,7 +38,7 @@ void main(){
     while(count<n){
         min=-1;
         for(j=0;j<n;j++){
-            if (p[j].at<=time && p[j].visited==0 && p[j].bt<p[min].bt){
+            if (p[j].at<=time && p[j].visited==0 ){
                 if(min==-1 || p[j].bt<p[min].bt){
                     min=j;
                 }
